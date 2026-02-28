@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
-    color: #777777;
+    color: #222222; /* was #77777*/
 }
 
 .top-bar {
@@ -22,7 +22,7 @@ body {
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #999999;
+    color: #111111; /* was #999999 */
 }
 
 .menu {
@@ -30,9 +30,9 @@ body {
     gap: 16px;
 }
 
-.menu-item a {
+.menu a {
     text-decoration: none;
-    color: #888888;
+    color: #222222; /* was #888888 */
     font-size: 14px;
 }
 
@@ -62,11 +62,13 @@ body {
 .primary-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #cccccc;
-    color: #ffffff;
+    background-color: #333333; /* was #cccccc*/
+    color: #ffffff; /* was #ffffff*/
     text-decoration: none;
     border-radius: 4px;
     font-size: 14px;
+    border: none; /* cleaner with this*/
+    cursor: pointer; /* adds a pointer cursor on hover */
 }
 
 .content {
@@ -76,7 +78,7 @@ body {
 .section-title h2 {
     font-size: 24px;
     margin-bottom: 16px;
-    color: #666666;
+    color: #111111; /* was #666666 */
 }
 
 .products {
@@ -100,10 +102,10 @@ body {
     margin-bottom: 8px;
 }
 
-.product-card h1 {
+.product-card h2 {
     font-size: 18px;
     margin-bottom: 4px;
-    color: #555555;
+    color: #222222; /* was #555555*/
 }
 
 .product-description {
@@ -121,11 +123,12 @@ body {
 .add-to-cart {
     display: inline-block;
     padding: 8px 16px;
-    background-color: #dddddd;
-    color: #777777;
+    background-color: #333333; /* was #dddddd*/
+    color: #ffffff; /* was #777777*/
     border-radius: 4px;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 15px; /* was 13px*/
+    border: none; /* cleaner with this*/
 }
 
 .newsletter {
@@ -152,7 +155,7 @@ body {
 }
 
 .footer a {
-    color: #999999;
+    color: #000000; /* was #999999*/
     text-decoration: none;
     margin-left: 8px;
 }
