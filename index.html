@@ -90,11 +90,19 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.7.2/axe.min.js"></script>
     <script>
-        axe.run().then(function(results) {
+            axe.run().then(function(results) {
             console.log('axe violations:', results.violations);
             console.log('axe passes:', results.passes);
         });
     </script>
-    
+
+    <script>
+    new PerformanceObserver(function(list) {
+                list.getEntries().forEach(function(entry) {
+                console.log('LCP:', entry.startTime, 'ms');
+            });
+        }).observe({type: 'largest-contentful-paint', buffered: true});
+    </script>
+
 </body>
 </html>
