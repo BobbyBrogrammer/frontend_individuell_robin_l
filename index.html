@@ -87,5 +87,14 @@
         <p>© 2025 MyShop. All rights reserved.</p>
         <a href="#">Contact us</a>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.7.2/axe.min.js"></script>
+    <script>
+        axe.run().then(function(results) {
+            console.log('axe violations:', results.violations);
+            console.log('axe passes:', results.passes);
+        });
+    </script>
+    
 </body>
 </html>
