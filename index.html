@@ -97,7 +97,7 @@
     </script>
 
     <script>
-    new PerformanceObserver(function(list) {
+        new PerformanceObserver(function(list) {
                 list.getEntries().forEach(function(entry) {
                 console.log('LCP:', entry.startTime, 'ms');
             });
